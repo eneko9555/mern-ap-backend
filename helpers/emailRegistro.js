@@ -13,7 +13,7 @@ const emailRegistro = async (datos) => {
     const {email, nombre, token} = datos;
 
     const info = await transporter.sendMail({
-        from: 'AP - Administrador de Pacientes',
+        from: 'AP - Administrador de Pacientes <apv@correo.com>',
         to: email,
         subject: 'Comprueba tu cuenta en AP',
         text:'Comprueba tu cuenta en AP',
