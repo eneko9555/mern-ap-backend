@@ -27,7 +27,9 @@ const corsOptions = {
     }
 }
 
-app.use(cors(corsOptions))
+app.use(cors({
+    origin:'*'
+}))
 
 //Rutas
 app.use('/api/veterinarios', veterinarioRoutes);
