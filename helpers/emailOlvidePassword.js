@@ -14,7 +14,7 @@ const emailRecuperarPassword = async (datos) => {
     const {email, nombre, token} = datos;
 
     const info = await transporter.sendMail({
-        from: 'AP - Administrador de Pacientes',
+        from: 'AP - Administrador de Pacientes <apv@correo.com>',
         to: email,
         subject: 'Recupera tu contraseña en AP',
         text:'Recupera tu contraseña en AP',
