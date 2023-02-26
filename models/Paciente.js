@@ -13,6 +13,10 @@ const pacientesSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    edad: {
+        type: Number,
+        required : true
+    },
     fecha: {
         type: Date,
         required: true,
